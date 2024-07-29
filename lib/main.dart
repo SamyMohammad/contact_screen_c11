@@ -11,7 +11,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {ContactsScreen.routeName: (_) => const ContactsScreen()},
+      title: 'contact screen',
+      routes: {
+        ContactsScreen.routeName: (context) => const ContactsScreen(),
+      },
       // initialRoute:ContactsScreen.routeName ,
     );
   }
